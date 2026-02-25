@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siva Shankar — Full Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Siva Shankar — Full Stack Developer crafting robust web applications with passion." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Devicons (Tech Stack Logos) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Cyberpunk Backgrounds -->
+    <canvas id="bgc"></canvas>
+    <div class="grid-bg"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+
+
+    <!-- ===== HEADER / NAV ===== -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="logo" data-magnetic><span class="logo-accent">[</span>DEV<span
+                    class="logo-accent">]</span></a>
+            <nav class="nav" id="nav">
+                <a href="#about" class="nav-link" data-magnetic>About</a>
+                <a href="#skills" class="nav-link" data-magnetic>Skills</a>
+                <a href="#projects" class="nav-link" data-magnetic>Work</a>
+                <a href="#achievements" class="nav-link" data-magnetic>Milestones</a>
+                <a href="#contact" class="nav-link" data-magnetic>Contact</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu" data-magnetic>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-inner">
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#projects" class="mobile-nav-link">Work</a>
+            <a href="#achievements" class="mobile-nav-link">Milestones</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+        <div class="mobile-nav-footer">
+            <a href="https://github.com/siva-shankar-2004" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/siva-shankar-9258142a1/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:shivashankarshiva2020@gmail.com">Email</a>
+        </div>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-top">
+                <div class="hero-img-wrapper" data-speed="0.9">
+                    <div class="hero-img-inner">
+                        <img src="assets/siva.jpg" alt="Siva Shankar" />
+                    </div>
+                </div>
+                <div class="hero-intro">
+                    <p class="hero-subtitle reveal-text">
+                        <span>System online <span class="blink">_</span></span>
+                    </p>
+                    <p class="hero-description reveal-text">
+                        <span>I architect and build end-to-end digital systems —</span>
+                    </p>
+                    <p class="hero-description reveal-text">
+                        <span>from pixel-perfect interfaces to robust cloud infrastructure.</span>
+                    </p>
+                    <div class="hero-cta reveal-up">
+                        <a href="assets/resume.pdf" download class="btn btn-p" data-magnetic>
+                            <i class="ri-download-2-line"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           <div class="hero-name-wrapper">
+    <h1 class="hero-name">
+        <span class="hero-name-line reveal-text"><span class="t1">Siva</span> <span class="t2">Shankar</span></span>
+    </h1>
+    <h2 class="hero-role">
+        <span class="hero-role-line reveal-text"><span class="r1">Full Stack</span></span>
+        <span class="hero-role-line reveal-text"><span class="r2">Developer</span></span>
+    </h2>
+</div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span>Full Stack Developer</span>
+                <span class="marquee-dot">●</span>
+                <span>Frontend Enthusiast</span>
+                <span class="marquee-dot">●</span>
+                <span>Backend Engineer</span>
+                <span class="marquee-dot">●</span>
+                <span>Problem Solver</span>
+                <span class="marquee-dot">●</span>
+                <span>Full Stack Developer</span>
+                <span class="marquee-dot">●</span>
+                <span>Frontend Enthusiast</span>
+                <span class="marquee-dot">●</span>
+                <span>Backend Engineer</span>
+                <span class="marquee-dot">●</span>
+                <span>Problem Solver</span>
+                <span class="marquee-dot">●</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-label">
+                    <span class="label-tag reveal-text"><span>( About Me )</span></span>
+                </div>
+                <div class="about-content">
+                    <h2 class="about-heading reveal-lines">
+                        I'm a passionate Full Stack Developer who loves turning ideas into elegant, high-performance web
+                        applications.
+                    </h2>
+                    <div class="about-body">
+                        <p class="reveal-up">
+                            With a strong foundation in both frontend and backend technologies, I build seamless user
+                            experiences backed by robust server-side logic. I thrive on solving complex problems and
+                            continuously learning new technologies.
+                        </p>
+                        <div class="about-stats-row reveal-up">
+                            <div class="about-stat">
+                                <span class="about-stat-num" data-count="5">0</span>
+                                <span class="about-stat-label">Projects</span>
+                            </div>
+                            <div class="about-stat">
+                                <span class="about-stat-num" data-count="8">0</span>
+                                <span class="about-stat-label">Technologies</span>
+                            </div>
+                            <div class="about-stat">
+                                <span class="about-stat-num" data-count="2">0</span>
+                                <span class="about-stat-label">Certifications</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-label">
+                <span class="label-tag reveal-text"><span>( Tech Stack )</span></span>
+            </div>
+            <h2 class="section-heading reveal-lines">Technologies I work with</h2>
+            <div class="skills-table">
+                <div class="skill-row reveal-left" data-magnetic-area>
+                    <span class="skill-number">01</span>
+                    <span class="skill-icon"><i class="devicon-html5-plain"></i></span>
+                    <span class="skill-name">HTML5 / CSS3</span>
+                    <span class="skill-category">Frontend</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar-fill" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-row reveal-right" data-magnetic-area>
+                    <span class="skill-number">02</span>
+                    <span class="skill-icon"><i class="devicon-javascript-plain"></i></span>
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-category">Frontend</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar-fill" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-row reveal-left" data-magnetic-area>
+                    <span class="skill-number">03</span>
+                    <span class="skill-icon"><i class="devicon-java-plain"></i></span>
+                    <span class="skill-name">Java</span>
+                    <span class="skill-category">Backend</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar-fill" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-row reveal-right" data-magnetic-area>
+                    <span class="skill-number">04</span>
+                    <span class="skill-icon"><i class="devicon-spring-original"></i></span>
+                    <span class="skill-name">Spring Boot</span>
+                    <span class="skill-category">Backend</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar-fill" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-row reveal-left" data-magnetic-area>
+                    <span class="skill-number">05</span>
+                    <span class="skill-icon"><i class="devicon-python-plain"></i></span>
+                    <span class="skill-name">Python</span>
+                    <span class="skill-category">Backend</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar-fill" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill-row reveal-right" data-magnetic-area>
+                    <span class="skill-number">06</span>
+                    <span class="skill-icon"><i class="devicon-mysql-plain"></i></span>
+                    <span class="skill-name">MySQL</span>
+                    <span class="skill-category">Database</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar-fill" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            <div class="section-label" style="margin-top: 40px;">
+                <span class="label-tag reveal-text"><span>| Tools & IDEs |</span></span>
+            </div>
+
+            <div class="skills-table">
+                <div class="skill-row reveal-left" data-magnetic-area>
+                    <span class="skill-number">01</span>
+                    <span class="skill-icon"><i class="devicon-intellij-plain"></i></span>
+                    <span class="skill-name">IntelliJ IDEA</span>
+                    <span class="skill-category">IDE</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar-fill" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-row reveal-right" data-magnetic-area>
+                    <span class="skill-number">02</span>
+                    <span class="skill-icon"><i class="devicon-eclipse-plain"></i></span>
+                    <span class="skill-name">Eclipse</span>
+                    <span class="skill-category">IDE</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar-fill" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-row reveal-left" data-magnetic-area>
+                    <span class="skill-number">03</span>
+                    <span class="skill-icon"><i class="devicon-vscode-plain"></i></span>
+                    <span class="skill-name">VS Code</span>
+                    <span class="skill-category">IDE</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar-fill" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-row reveal-right" data-magnetic-area>
+                    <span class="skill-number">04</span>
+                    <span class="skill-icon"><i class="devicon-pycharm-plain"></i></span>
+                    <span class="skill-name">PyCharm</span>
+                    <span class="skill-category">IDE</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar-fill" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill-row reveal-left" data-magnetic-area>
+                    <span class="skill-number">05</span>
+                    <span class="skill-icon"><i class="devicon-git-plain"></i></span>
+                    <span class="skill-name">Git &amp; GitHub</span>
+                    <span class="skill-category">VCS</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar-fill" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-row reveal-right" data-magnetic-area>
+                    <span class="skill-number">06</span>
+                    <span class="skill-icon"><i class="devicon-postman-plain"></i></span>
+                    <span class="skill-name">Postman</span>
+                    <span class="skill-category">API Tool</span>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar-fill" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-label">
+                <span class="label-tag reveal-text"><span>( Featured Work )</span></span>
+            </div>
+            <h2 class="section-heading reveal-lines">Selected Projects</h2>
+
+            <div class="project-item reveal-left">
+                <a href="https://github.com/siva-shankar-2004/EmployeeManagementSystem" target="_blank" rel="noopener"
+                    class="project-link-wrap">
+                    <div class="project-header">
+                        <h3 class="project-title" data-magnetic>Employee Management System</h3>
+                        <span class="project-arrow"><i class="ri-arrow-right-up-line"></i></span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <p class="project-desc">Full-stack CRUD application for managing employee records with a clean
+                            UI and robust Spring Boot backend.</p>
+                    </div>
+                    <div class="project-image-strip">
+                        <div class="project-img-placeholder">
+                            <i class="ri-team-fill"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-item reveal-right">
+                <a href="https://siva-e-commerce.netlify.app/" target="_blank" rel="noopener" class="project-link-wrap">
+                    <div class="project-header">
+                        <h3 class="project-title" data-magnetic>E-Commerce Website</h3>
+                        <span class="project-arrow"><i class="ri-arrow-right-up-line"></i></span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <p class="project-desc">Modern responsive e-commerce platform with product browsing, shopping
+                            cart, and sleek UI deployed on Netlify.</p>
+                    </div>
+                    <div class="project-image-strip">
+                        <div class="project-img-placeholder">
+                            <i class="ri-shopping-cart-2-fill"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS & CERTIFICATIONS ===== -->
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <div class="section-label">
+                <span class="label-tag reveal-text"><span>( Milestones )</span></span>
+            </div>
+            <h2 class="section-heading reveal-lines">Achievements & Certifications</h2>
+
+            <div class="milestones-grid">
+                <div class="milestone-card reveal-left">
+                    <div class="milestone-icon trophy"><i class="ri-trophy-fill"></i></div>
+                    <span class="milestone-type">Achievement</span>
+                    <h3>3rd Prize — Hackathon by Zenardy</h3>
+                    <p>Secured third place in a competitive hackathon showcasing problem-solving skills and teamwork
+                        under pressure.</p>
+                </div>
+                <div class="milestone-card reveal-up">
+                    <div class="milestone-icon cert"><i class="ri-medal-fill"></i></div>
+                    <span class="milestone-type">Certification</span>
+                    <h3>SQL (Basic) — HackerRank</h3>
+                    <p>Demonstrated proficiency in SQL queries, joins, aggregations, and database fundamentals.</p>
+                    <a href="assets/sql-certificate.pdf" target="_blank" class="cert-link" data-magnetic>
+                        <i class="ri-eye-line"></i> View Certificate
+                    </a>
+                </div>
+                <div class="milestone-card reveal-right">
+                    <div class="milestone-icon cert"><i class="ri-medal-fill"></i></div>
+                    <span class="milestone-type">Certification</span>
+                    <h3>Full Stack Development — Techademy</h3>
+                    <p>Completed an intensive Full Stack Development course covering end-to-end web development with
+                        modern technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-top">
+                <div class="section-label">
+                    <span class="label-tag reveal-text"><span>( Get In Touch )</span></span>
+                </div>
+                <h2 class="contact-heading reveal-lines">Let's work<br />together</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-up">
+                    <p class="contact-desc">Have a project in mind or just want to say hello? Drop me a message and I'll
+                        get back to you!</p>
+                    <div class="contact-links">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shivashankarshiva2020@gmail.com"
+                            target="_blank" rel="noopener" class="contact-link-item" data-magnetic>
+                            <span class="contact-link-icon"><i class="ri-mail-fill"></i></span>
+                            <span>shivashankarshiva2020@gmail.com</span>
+                        </a>
+                        <a href="https://wa.me/919361307506" target="_blank" rel="noopener" class="contact-link-item"
+                            data-magnetic>
+                            <span class="contact-link-icon"><i class="ri-whatsapp-fill"></i></span>
+                            <span>+91 9361307506</span>
+                        </a>
+                        <a href="https://github.com/siva-shankar-2004" target="_blank" rel="noopener"
+                            class="contact-link-item" data-magnetic>
+                            <span class="contact-link-icon"><i class="ri-github-fill"></i></span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/siva-shankar-9258142a1/" target="_blank" rel="noopener"
+                            class="contact-link-item" data-magnetic>
+                            <span class="contact-link-icon"><i class="ri-linkedin-box-fill"></i></span>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form reveal-up" id="contactForm">
+                    <div class="form-field">
+                        <input type="text" id="userName" name="user_name" required autocomplete="name"
+                            placeholder=" " />
+                        <label for="userName">Name</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="email" id="userEmail" name="user_email" required autocomplete="email"
+                            placeholder=" " />
+                        <label for="userEmail">Email</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" id="subject" name="subject" required placeholder=" " />
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-field">
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn" data-magnetic>
+                        <span class="submit-text">Send Message</span>
+                        <span class="submit-loader"><i class="ri-loader-4-line"></i></span>
+                        <span class="submit-arrow"><i class="ri-arrow-right-up-line"></i></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-copy">&copy; 2026 Siva Shankar</span>
+                <div class="footer-links">
+                    <a href="https://github.com/siva-shankar-2004" target="_blank" rel="noopener"
+                        class="mobile-nav-link p-link" data-magnetic>GitHub</a>
+                    <a href="https://www.linkedin.com/in/siva-shankar-9258142a1/" target="_blank" rel="noopener"
+                        class="mobile-nav-link p-link" data-magnetic>LinkedIn</a>
+                    <a href="mailto:shivashankarshiva2020@gmail.com" data-magnetic>Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span class="toast-msg" id="toastMessage">Message sent!</span>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
